@@ -1,0 +1,29 @@
+{
+    "name": "TimeModule",
+    "version": "1.0.0",
+    "os": "any",
+    "api_version": ">=1.0.0",
+    "functions": [
+        {
+            "name": "get_time",
+            "args": {},
+            "description": "Returns the current time in a table with the following keys: {year, month, day, hour, minute, second, milisecond}"
+        },
+        {
+            "name": "set_timer",
+            "args": {
+                "time": {
+                    "required": true,
+                    "arg_type": "number",
+                    "description": "The time in milisecond that you want to set the timer for"
+                },
+                "name": {
+                    "required": true,
+                    "arg_type": "string",
+                    "description": "The name for the timer"
+                }
+            },
+            "description": "Returns the current time in a table with the following keys: {year, month, day, hour, minute, second, milisecond}"
+        }
+    ]
+}
